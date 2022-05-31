@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.main{
+    
+    width: 100%;
+    height: 100%;    
+    background-position: center;
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.37);
+}
+.menu{
+    
+    margin-top: 15px;
+      
+}
+.menu a {
+    font-family: 'Bebas Neue', Helvetica, sans-serif;
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 7px 25px;
+    transition: .3s;
+
+}
+.menu a:hover{
+    background-color: rgba(250, 187, 145, 0.849);
+    padding: 7px 25px ;
+    border-radius: 5px;
+}
+.menu a.interativo{
+    padding: 0px;
+    margin: 0px;
+    background-color:blanchedalmond ;
+    margin-left: 20px;
+}
+
+
+video {
+    background-size: cover;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+}
+
+
+.pt2{    
+    text-align: center;
+}
+.pt2 p{
+    margin-top: 150px;
+    font-family: 'Play', Helvetica, sans-serif;
+    color: rgba(226, 6, 6, 0.747);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.pt2 h2{ 
+    font-weight: bolder;
+    font-family: 'Abril Fatface', Helvetica, sans-serif;
+    font-size: 50px;
+   
+}
+.etapaspt1{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-flow:wrap ;
+    justify-content: center;
+}
+div.etapas{  
+    width: 300px;
+    height: 500px;
+    border: 1px solid red;
+    margin: 20px;
+    box-sizing: border-box;
+
+}
+
+
+.etapaspt1 img{
+    
+    margin-top: 90px;
+    margin-left: 110px;
+    opacity: 50%;
+}
+.etapaspt1 img#arrumes{
+    margin-top: 90px;
+    margin-left: 110px;
+    opacity: 50%
+}
+
+
+.etapas h2{
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 10px;
+
+}
+.etapas p{
+    text-align: center;
+    font-family: 'Play', Helvetica, sans-serif;
+    margin-bottom: 40px;
+    padding: 10px;
+
+}
+
+footer{
+
+     background-color: wheat;
+    text-align: center;
+    padding: 45px;
+    margin-top: 200px;
+}
+footer a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif, Helvetica, sans-serif ;
+    font-weight: bolder;
+}
+footer a:hover{
+    color: red;
+}
+
+.etapas:hover{
+    background-color: red;
+    color: white;
+}
+
