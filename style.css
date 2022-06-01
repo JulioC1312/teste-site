@@ -1,3 +1,7 @@
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,10 +10,10 @@
 
 html,body{
     height: 100%;
+    background-color: rgb(0, 0, 0);
 }
 
-.main{
-    
+.main{  
     width: 100%;
     height: 100%;    
     background-position: center;
@@ -18,9 +22,9 @@ html,body{
 header{
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color:rgb(70, 70, 70);
     padding-bottom: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 5px 5px rgb(255, 0, 0);
 }
 .menu{
     
@@ -32,7 +36,7 @@ header{
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
-    color: white;
+    color:white;
     font-weight: bold;
     font-size: 25px;
     padding: 7px 25px;
@@ -40,15 +44,67 @@ header{
 
 }
 .menu a:hover{
-    background-color: rgba(255, 0, 0, 0.596);
+    background-color: rgba(255, 0, 0, 0.5);
     padding: 7px 25px ;
     border-radius: 5px;
 }
 .menu a.interativo{
     padding: 0px;
     margin: 0px;
-    background-color: black;
+    background-color:rgb(70, 70, 70) ;
     margin-left: 20px;
+}
+
+.menu-mobile{
+    display: none;
+ 
+}
+.menu-mobile{
+    display: none;
+    text-align: right;
+    width: 50%;
+}
+
+.menu-mobile i{
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+
+.menu-mobile ul{
+    background-color: blanchedalmond;
+    opacity: 1;
+    transition: 1s;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    text-align: center;
+}
+.show-menu{
+    opacity: 1 !important;
+    
+} 
+.menu-mobile ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    padding: 20px;
+    font-weight: bolder;
+    font-family: 'Bebas Neue', Helvetica, sans-serif;
+}
+
+@media screen and (max-width:768px){
+    .menu-mobile{
+        display: block;       
+    }
+     .menu-mobile ul{
+        display: none;
+    } 
+    .menu{
+        display: none;
+    }
 }
 
 
@@ -73,8 +129,11 @@ video {
 }
 .pt2 h2{ 
     font-weight: bolder;
+    background-color: aliceblue;
     font-family: 'Abril Fatface', Helvetica, sans-serif;
+    margin-top: 100px;
     font-size: 50px;
+    
    
 }
 .etapaspt1{
@@ -82,26 +141,29 @@ video {
     width: 100%;
     height: auto;
     flex-direction: row;
+    margin-top: 150px;
     flex-flow:wrap ;
     justify-content: center;
+
 }
 div.etapas{  
     width: 300px;
     height: 500px;
     border: 1px solid red;
+    background-color: white;
     margin: 20px;
     box-sizing: border-box;
-
+    border-radius: 5px;
 }
 
-.etapaspt1 img{
+.etapaspt1 img{    
     margin-top: 90px;
     margin-left: 110px;
-    opacity: 50%;
+    opacity: 50%;   
 }
 .etapaspt1 img#arrumes{
     margin-top: 90px;
-    margin-left: 98px;
+    margin-left: 95px;
     opacity: 50%
 }
 
@@ -110,21 +172,19 @@ div.etapas{
     text-align: center;
     margin-bottom: 40px;
     padding: 10px;
-
 }
 .etapas p{
     text-align: center;
     font-family: 'Play', Helvetica, sans-serif;
     margin-bottom: 40px;
     padding: 10px;
-
 }
 
 footer{
 
-     background-color:black;
+     background-color: rgb(70, 70, 70);
     text-align: center;
-    padding: 45px;
+    padding: 20px;
     margin-top: 200px;
 }
 footer a{
