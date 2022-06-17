@@ -51,7 +51,7 @@
 
                 </div>
 
-                <div class="menu-mobile">
+                <div class="menu-mobile" onclick="clicar()">
                     <i class="fa-solid fa-bars"></i>
                       <ul >
                           <li><a href="#">Whitelist</a></li>
@@ -108,7 +108,13 @@
     </section>
    
 <script>
-   
+   var menuBar = document.querySelector('menu-mobile')
+
+   var menu = document.querySelector('menu-mobile i')
+
+    function clicar(){
+        alert('opa ladrao')
+    }
 
 
 
